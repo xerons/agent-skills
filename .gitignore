@@ -1,5 +1,8 @@
 # Skills installed locally to work on this repository; skills-lock.json tracks them.
 /.agents/skills/
 
+# draft, plan, spec
+/docs/superpowers/
+
 # macOS metadata
 .DS_Store
