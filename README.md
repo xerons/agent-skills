@@ -10,6 +10,14 @@ Personal agent skills organized by group. Each skill lives in its own folder and
 - **dev-setup** — prepares a repository with minimal, project-local agent guidance.
 - **repo-map** — explains repository structure and important code paths.
 
+## Project Management
+
+- **tpm-spec** — shapes an initiative into an approved, tracker-neutral spec and epic/story backlog.
+- **plane-setup** — creates a Plane project and configures confirmed process features.
+- **plane-publish** — previews and publishes approved backlog items to an existing Plane project.
+- **linear-setup** — creates a Linear project and configures confirmed process features.
+- **linear-publish** — previews and publishes approved backlog items to an existing Linear project.
+
 ## Local dependencies
 
 `skills-lock.json` records external skills used while developing this collection. `.agents/skills/` contains local installed copies and is not tracked.

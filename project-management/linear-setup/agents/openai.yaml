@@ -1,0 +1,6 @@
+interface:
+  display_name: "Linear Setup"
+  short_description: "Create a Linear project with confirmed features"
+  default_prompt: "Use $linear-setup to create and configure a Linear project."
+policy:
+  allow_implicit_invocation: false

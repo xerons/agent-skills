@@ -1,0 +1,6 @@
+interface:
+  display_name: "TPM Spec"
+  short_description: "Shape an initiative into a neutral spec and backlog"
+  default_prompt: "Use $tpm-spec to shape this initiative into a spec and backlog."
+policy:
+  allow_implicit_invocation: false

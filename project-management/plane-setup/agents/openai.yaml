@@ -1,0 +1,6 @@
+interface:
+  display_name: "Plane Setup"
+  short_description: "Create a Plane project with confirmed features"
+  default_prompt: "Use $plane-setup to create and configure a Plane project."
+policy:
+  allow_implicit_invocation: false
