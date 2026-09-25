@@ -1,0 +1,6 @@
+interface:
+  display_name: "Asana Publish"
+  short_description: "Preview and publish approved items to Asana"
+  default_prompt: "Use $asana-publish to preview and publish this approved backlog to Asana."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Asana Setup"
+  short_description: "Prepare an Asana project with confirmed features"
+  default_prompt: "Use $asana-setup to create or configure an Asana project."
+policy:
+  allow_implicit_invocation: false
