@@ -1,0 +1,5 @@
+# Skills installed locally to work on this repository; skills-lock.json tracks them.
+/.agents/skills/
+
+# macOS metadata
+.DS_Store

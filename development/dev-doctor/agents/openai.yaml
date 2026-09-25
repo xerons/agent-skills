@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dev Doctor"
+  short_description: "Audit a repo AI development setup"
+  default_prompt: "Use $dev-doctor to check this repo's AI development setup."
+policy:
+  allow_implicit_invocation: true
