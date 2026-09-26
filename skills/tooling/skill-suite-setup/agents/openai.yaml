@@ -1,0 +1,6 @@
+interface:
+  display_name: "Skill Suite Setup"
+  short_description: "Set up selected skills and their prerequisites"
+  default_prompt: "Use $skill-suite-setup to install selected skills and guide their tool and MCP setup."
+policy:
+  allow_implicit_invocation: false
