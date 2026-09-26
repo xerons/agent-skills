@@ -2,6 +2,24 @@
 
 Personal agent skills organized by group. Each skill lives in its own folder and contains a `SKILL.md` entry point.
 
+## Install
+
+Use the [`skills` CLI](https://github.com/vercel-labs/skills) to install skills from this repository into Codex. List available skills, then install one or more globally:
+
+```sh
+npx skills add xerons/agent-skills --list
+npx skills add xerons/agent-skills --skill dev-coach --agent codex --global
+```
+
+Repeat `--skill` to select multiple skills. To install the full collection or update existing global installs:
+
+```sh
+npx skills add xerons/agent-skills --skill '*' --agent codex --global
+npx skills update -g
+```
+
+These commands install skill files only. Required tools, MCP connections, and authentication are listed below. Install from GitHub after pushing the changes you want to use.
+
 ## Development
 
 - **dev-coach** — guides development work from clarification through implementation and teach-back.
