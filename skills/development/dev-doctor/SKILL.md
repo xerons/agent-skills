@@ -23,7 +23,7 @@ For a set of evidence-backed findings, consult the `typesafe-ai` skill and use J
 - **Advisory** — a supported improvement that is optional for the stated workflow.
 - **Needs investigation** — available evidence is insufficient to assign impact.
 
-Provide Jev with concise findings and their evidence, the requested workflow, and these class definitions. Treat Jev's result as a prioritization judgment, not proof that a file or tool exists. Codex verifies the evidence and handles open-ended interpretation. If Jev flags uncertainty, review the evidence and mark the finding as needing investigation when it remains unclear. If Jev is unavailable, classify with Codex and disclose that fallback.
+Provide Jev with concise findings and their evidence, the requested workflow, and these class definitions. Treat Jev's result as a prioritization judgment, not proof that a file or tool exists. The primary reasoning agent verifies the evidence and handles open-ended interpretation. If Jev flags uncertainty, review the evidence and mark the finding as needing investigation when it remains unclear. If Jev is unavailable, classify with the primary reasoning agent and disclose that fallback.
 
 Do not give the repository an arbitrary numeric health score. A missing file is not automatically a blocker.
 

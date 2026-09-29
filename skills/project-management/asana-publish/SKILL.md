@@ -36,7 +36,7 @@ This keeps Asana publishing within one project. It differs from Asana's broader 
 
 ## Jev reporting
 
-Jev supports only the bounded candidate classification in step 4. Codex owns source validation, Asana mapping, preview content, write decisions, and the final explanation. At completion, name the step Jev supported and any uncertain classifications; say “Jev not used” if it was unavailable or not used. Jev output is evidence for review, never publishing approval.
+Jev supports only the bounded candidate classification in step 4. The primary reasoning agent owns source validation, Asana mapping, preview content, write decisions, and the final explanation. At completion, name the step Jev supported and any uncertain classifications; say “Jev not used” if it was unavailable or not used. Jev output is evidence for review, never publishing approval.
 
 ## Official references
 

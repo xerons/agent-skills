@@ -1,6 +1,6 @@
 ---
 name: code-simplify
-description: Use when the user explicitly invokes `$code-simplify` for a focused cleanup of recently changed or user-named code, reducing complexity while preserving behavior.
+description: Use when the user explicitly invokes `$code-simplify` in Codex or explicitly asks another host to use the code-simplify skill for a focused cleanup of recently changed or user-named code, reducing complexity while preserving behavior.
 disable-model-invocation: true
 ---
 

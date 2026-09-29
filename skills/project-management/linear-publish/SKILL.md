@@ -21,4 +21,4 @@ Translate an approved `spec.md` and `backlog.md` into new issues in an existing 
 
 ## Jev reporting
 
-Use Jev only for the bounded semantic duplicate-candidate judgment in step 4, or another clearly bounded classification/filtering task. Codex owns source validation, Linear mapping, preview content, and the final explanation. At completion, name the step(s) Jev supported and any uncertain classifications; say “Jev not used” if unavailable or unnecessary. Jev output is evidence for review, never publishing approval.
+Use Jev only for the bounded semantic duplicate-candidate judgment in step 4, or another clearly bounded classification/filtering task. The primary reasoning agent owns source validation, Linear mapping, preview content, and the final explanation. At completion, name the step(s) Jev supported and any uncertain classifications; say “Jev not used” if unavailable or unnecessary. Jev output is evidence for review, never publishing approval.
