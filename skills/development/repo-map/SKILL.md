@@ -26,3 +26,5 @@ Use only the sections that answer the user's request. A general orientation usua
 - **Useful commands:** verified run, build, or validation commands when available.
 
 Keep the explanation compact and readable. Avoid a file-by-file dump, speculative architecture diagrams, arbitrary health scores, and long documents by default. Save the map or create diagrams only when the user asks. Do not debug defects, review overall code quality, or change code as part of orientation; hand those requests to the appropriate workflow.
+
+After presenting the map, if a visual or interactive explanation would materially improve understanding, ask permission before invoking `multi-format-explainer` and wait for an explicit yes. If the user declines, end with the normal repository map.

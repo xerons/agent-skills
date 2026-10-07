@@ -37,3 +37,5 @@ Do not give the repository an arbitrary numeric health score. A missing file is 
 ## Report
 
 Give a short summary, then list actionable findings in priority order. For each finding include its priority, evidence, impact on the requested workflow, and a proposed next step. Keep optional suggestions separate from faults. If fixes were requested and made, list the exact files changed and checks actually run. State what could not be inspected; do not claim a clean bill of health beyond the inspected scope.
+
+After the report, if a visual or interactive explanation would materially help the user understand the findings, ask whether they want a multi-format explanation. Wait for an explicit yes before invoking `multi-format-explainer`; if they decline, end with the normal audit report.

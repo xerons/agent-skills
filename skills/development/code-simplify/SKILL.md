@@ -24,4 +24,6 @@ Make code easier to read and maintain without changing what it does. Work on the
 - Do not add features, fix unrelated bugs, remove useful abstractions, or optimize for fewer lines.
 - Follow the user's and project instructions for verification. Never invent or claim checks that were not run.
 
-When used as part of `$dev-coach`, run this only if the user asks for a simplification pass. Complete it before the teach-back so the explanation describes the final code.
+When used as part of `$dev-coach`, run this only if the user asks for a simplification pass. Complete it before the multi-format explanation and let `dev-coach` make the single permission request after the full implementation.
+
+When used directly, if an explainer would materially help the user understand the simplification, ask for permission after reporting the result. Wait for an explicit yes before invoking `multi-format-explainer`; a decline ends with the normal simplification report.

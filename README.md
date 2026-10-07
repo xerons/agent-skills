@@ -27,7 +27,9 @@ These commands install skill files only. Install from GitHub after pushing the c
 
 ## Development
 
-- **dev-coach** — guides development work from clarification through implementation and teach-back.
+- **dev-coach** — guides development work through discovery and implementation, with an optional teach-back.
+- **dev-discovery** — independently clarifies a software idea and returns a pre-implementation handoff.
+- **multi-format-explainer** — explains a topic or completed result in prose, diagrams, interactive HTML, or video when suitable tools are available.
 - **code-simplify** — simplifies recently changed code while preserving behavior.
 - **dev-doctor** — audits a repository's AI-assisted development setup.
 - **dev-setup** — prepares a repository with minimal, project-local agent guidance.

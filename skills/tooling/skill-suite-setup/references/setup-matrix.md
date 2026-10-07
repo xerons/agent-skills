@@ -17,7 +17,9 @@ Repeat `--skill <skill-name>` for each selected skill. Replace `opencode` with `
 | Skill | Prerequisites |
 | --- | --- |
 | `skill-suite-setup` | `npx` and access to the collection repository. No external skill, CLI, MCP, or credential is required to bootstrap. |
-| `dev-coach` | Local project access; TypeSafe's `typesafe-ai` skill and Jev MCP for preferred route selection; Plannotator CLI, host integration, and `plannotator-setup-goal` plus `plannotator-visual-explainer` for the full interview and teach-back UI. The Plannotator installer supplies its core skills, including `plannotator-annotate`. OpenCode also needs the Plannotator plugin configured and restarted. Install the selected route skill and its prerequisites: `grill-me` + `grilling`; `grill-with-docs` + `grilling` + `domain-modeling`; or `wayfinder` + `grilling` + `domain-modeling`. Optional follow-on skills are `to-spec`, `to-tickets`, `implement`, and `code-review`. The skill can fall back to chat when Plannotator is unavailable. |
+| `multi-format-explainer` | No mandatory external skill, Jev connection, or media-generation tool. It adapts to available tools; Jev can choose among feasible formats, while diagrams, interactive HTML, and video depend on host capabilities. |
+| `dev-discovery` | Local project access; Matt's `grilling` skill for interview routes and `domain-modeling` for glossary/ADR work. Plannotator plus `plannotator-setup-goal` provides the preferred browser interview; HTML is a fallback when the host can return form answers, with chat as the final fallback. `ask-matt` is user-invoked and recommends a route without running it, so `dev-discovery` applies its route distinctions directly; users can install `ask-matt` for direct access. The Wayfinder route requires installing and explicitly invoking `wayfinder`; it owns its multi-session map and ticket process. |
+| `dev-coach` | Local project access; `dev-discovery` for clarification; optional follow-on skills are `to-spec`, `to-tickets`, `implement`, and `code-review`. Install `multi-format-explainer` too if you want its optional teach-back; it has no mandatory external dependencies. |
 | `code-simplify` | Read/write access to the target repository and its normal editing tools. No tracker connection or API credential. |
 | `dev-doctor` | Read access to repository instructions and the agent/tool inventory. Jev is optional for evidence-backed finding priority; the primary reasoning agent can classify when Jev is unavailable. |
 | `dev-setup` | Read/write access to the target repository. `dev-doctor` and Jev can improve the workflow but are not required to edit local instructions. It does not install tools or configure credentials. |
@@ -42,16 +44,18 @@ npx skills add typesafe-ai/skills --skill typesafe-ai --agent opencode --global
 
 Replace `opencode` with `codex` to target Codex.
 
-The skill provides TypeSafe guidance; it does not itself make Jev tools available. Connect a Jev MCP server in the host and check that the selected workflows' expected Jev tools appear in the current session (for example, a decision tool for `dev-coach`, a semantic-search tool for `repo-map`, or a classification tool for `dev-doctor`). OpenCode may namespace MCP tool names differently from Codex, so check the current tool inventory instead of requiring a specific identifier. See the [OpenCode MCP documentation](https://opencode.ai/docs/mcp-servers) for its connection flow. Jev is an optional fallback for skills that explicitly permit the active agent to classify when unavailable. Do not infer global MCP configuration from current-session tool visibility.
+The skill provides TypeSafe guidance; it does not itself make Jev tools available. Connect a Jev MCP server in the host and check that the selected workflows' expected Jev tools appear in the current session (for example, a format-selection tool for `multi-format-explainer`, a semantic-search tool for `repo-map`, or a classification tool for `dev-doctor`). OpenCode may namespace MCP tool names differently from Codex, so check the current tool inventory instead of requiring a specific identifier. See the [OpenCode MCP documentation](https://opencode.ai/docs/mcp-servers) for its connection flow. Jev is an optional fallback for skills that explicitly permit the active agent to classify when unavailable. Do not infer global MCP configuration from current-session tool visibility.
 
 ### Matt Pocock workflow skills
 
 Install only the selected route and its supporting skills from [`mattpocock/skills`](https://github.com/mattpocock/skills), targeting the active host:
 
 ```sh
+npx skills add mattpocock/skills --skill grilling --skill domain-modeling --agent opencode --global
 npx skills add mattpocock/skills --skill grill-me --skill grilling --agent opencode --global
 npx skills add mattpocock/skills --skill grill-with-docs --skill grilling --skill domain-modeling --agent opencode --global
 npx skills add mattpocock/skills --skill wayfinder --skill grilling --skill domain-modeling --agent opencode --global
+npx skills add mattpocock/skills --skill ask-matt --agent opencode --global
 ```
 
 Replace `opencode` with `codex` to target Codex.
